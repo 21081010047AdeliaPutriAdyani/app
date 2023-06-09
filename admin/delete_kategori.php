@@ -13,7 +13,7 @@
             /if($remove==false)
             {
                  $_SESSION['remove'] = "<div class='error'>Gagal Menghapus Gambar.</div>";
-                header('location:'.SITEURL.'admin/manage-category.php');
+                header('location:'.SITEURL.'admin/kategori.php');
                 die();
             }
         }
@@ -24,16 +24,16 @@
         if($res==true)
         {
             $_SESSION['delete'] = "<div class='success'>Kategori Berhasil Dihapus.</div>";
-            header('location:'.SITEURL.'admin/manage-category.php');
+            header('location:'.SITEURL.'admin/kategori.php');
         }
         else
         {
             $_SESSION['delete'] = "<div class='error'>Gagal Menghapus Kategori.</div>";
-            header('location:'.SITEURL.'admin/manage-category.php');
+            header('location:'.SITEURL.'admin/kategori.php');
         }
     }
     else
     {
-        header('location:'.SITEURL.'admin/manage-category.php');
+        header('location:'.SITEURL.'admin/kategori.php');
     }
 ?>

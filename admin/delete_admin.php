@@ -8,12 +8,12 @@
     if($res==true)
     {
         $_SESSION['delete'] = "<div class='success'>Berhasil Menghapus Admin.</div>";
-        header('location:'.SITEURL.'admin/manage-admin.php');
+        header('location:'.SITEURL.'admin/admin.php');
     }
     else
     {
         $_SESSION['delete'] = "<div class='error'>Gagal Menghapus Admin. Coba Lagi Nanti.</div>";
-        header('location:'.SITEURL.'admin/manage-admin.php');
+        header('location:'.SITEURL.'admin/admin.php');
     }
 
 ?>
