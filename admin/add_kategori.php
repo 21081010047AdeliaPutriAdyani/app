@@ -144,7 +144,7 @@
                 if($res==true)
                 {
                     $_SESSION['add'] = "<div class='success'Berhasil Menambahkan Kategori.</div>";
-                    header('location:'.SITEURL.'admin/manage-category.php');
+                    header('location:'.SITEURL.'admin/kategori.php');
                 }
                 else
                 {

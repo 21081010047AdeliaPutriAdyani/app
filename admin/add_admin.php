@@ -85,7 +85,7 @@
             //Create a Session Variable to Display Message
             $_SESSION['add'] = "<div class='success'>Admin Added Successfully.</div>";
             //Redirect Page to Manage Admin
-            header("location:".SITEURL.'admin/manage-admin.php');
+            header("location:".SITEURL.'admin/admin.php');
         }
         else
         {
