@@ -1,4 +1,4 @@
-<?php include('partials/menu.php'); ?>
+<?php include('menu.php'); ?>
 
 <div class="main-content">
     <div class="container">
@@ -28,7 +28,7 @@
                 <tr>
                     <td>Title: </td>
                     <td>
-                        <input type="text" name="title" placeholder="Category Title">
+                        <input type="text" name="title" placeholder="Katagori">
                     </td>
                 </tr>
 
@@ -57,7 +57,7 @@
 
                 <tr>
                     <td colspan="2">
-                        <input type="submit" name="submit" value="Add Category" class="btn-secondary">
+                        <input type="submit" name="submit" value="Add Data Kategori" class="btn-secondary">
                     </td>
                 </tr>
 
@@ -121,7 +121,7 @@
                        if($upload==false)
                         {
                            $_SESSION['upload'] = "<div class='error'>Gagal Upload Image. </div>";
-                            header('location:'.SITEURL.'admin/add-category.php');
+                            header('location:'.SITEURL.'admin/add_kategori.php');
                             die();
                         }
 
