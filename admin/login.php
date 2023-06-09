@@ -28,7 +28,7 @@
             <br><br>
             <form action="" method="POST" class="text-center">
             Username: <br>
-            <input type="text" name="username" placeholder="Masukkan Username><br><br>
+            <input type="text" name="username" placeholder="Masukkan Username"><br><br>
 
             Password: <br>
             <input type="password" name="password" placeholder="Masukkan Password"><br><br>
