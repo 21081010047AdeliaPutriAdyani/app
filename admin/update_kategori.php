@@ -12,7 +12,7 @@
             if(isset($_GET['id']))
             {
                 $id = $_GET['id'];
-                $sql = "SELECT * FROM tbl_Kategori WHERE id=$id";
+                $sql = "SELECT * FROM tbl_category WHERE id=$id";
                 $res = mysqli_query($conn, $sql);
 
                 $count = mysqli_num_rows($res);
@@ -27,7 +27,7 @@
                 }
                 else
                 {
-                    $_SESSION['no-Kategori-found'] = "<div class='error'>Kategori Tidak di Temukan.</div>";
+                    $_SESSION['no-category-found'] = "<div class='error'>Kategori Tidak di Temukan.</div>";
                     header('location:'.SITEURL.'admin/kategori.php');
                 }
 
@@ -56,7 +56,7 @@
                             if($current_image != "")
                             {
                                 ?>
-                                <img src="<?php echo SITEURL; ?>images/Kategori/<?php echo $current_image; ?>" width="150px">
+                                <img src="<?php echo SITEURL; ?>images/category/<?php echo $current_image; ?>" width="150px">
                                 <?php
                             }
                             else
@@ -126,7 +126,7 @@
 
                         $source_path = $_FILES['image']['tmp_name'];
 
-                        $destination_path = "../images/Kategori/".$image_name;
+                        $destination_path = "../images/category/".$image_name;
 
                         $upload = move_uploaded_file($source_path, $destination_path);
 
@@ -139,7 +139,7 @@
 
                         if($current_image!="")
                         {
-                            $remove_path = "../images/Kategori/".$current_image;
+                            $remove_path = "../images/category/".$current_image;
 
                             $remove = unlink($remove_path);
 
@@ -163,7 +163,7 @@
                     $image_name = $current_image;
                 }
 
-                $sql2 = "UPDATE tbl_Kategori SET 
+                $sql2 = "UPDATE tbl_category SET 
                     title = '$title',
                     image_name = '$image_name',
                     featured = '$featured',

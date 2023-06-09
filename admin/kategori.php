@@ -52,7 +52,7 @@
         ?>
         <br><br>
 
-                <a href="<?php echo SITEURL; ?>admin/add_category.php" class="btn-primary">Add Kategori</a>
+                <a href="<?php echo SITEURL; ?>admin/add_kategori.php" class="btn-primary">Add Kategori</a>
 
                 <br /><br /><br />
 
