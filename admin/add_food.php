@@ -174,12 +174,12 @@
                 if($res2 == true)
                 {
                     $_SESSION['add'] = "<div class='success'>Food Added Successfully.</div>";
-                    header('location:'.SITEURL.'admin/manage-food.php');
+                    header('location:'.SITEURL.'admin/food.php');
                 }
                 else
                 {
                      $_SESSION['add'] = "<div class='error'>Failed to Add Food.</div>";
-                    header('location:'.SITEURL.'admin/manage-food.php');
+                    header('location:'.SITEURL.'admin/food.php');
                 }
 
                 

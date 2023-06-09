@@ -1,8 +1,8 @@
-<?php include('partials/menu.php'); ?>
+<?php include('menu.php'); ?>
 
 <div class="main-content">
-    <div class="wrapper">
-        <h1>Manage Category</h1>
+    <div class="container">
+        <h1>Kategori</h1>
 
         <br /><br />
         <?php 
@@ -52,8 +52,7 @@
         ?>
         <br><br>
 
-                <!-- Button to Add Admin -->
-                <a href="<?php echo SITEURL; ?>admin/add-category.php" class="btn-primary">Add Category</a>
+                <a href="<?php echo SITEURL; ?>admin/add_category.php" class="btn-primary">Add Kategori</a>
 
                 <br /><br /><br />
 
@@ -69,23 +68,13 @@
 
                     <?php 
 
-                        //Query to Get all CAtegories from Database
                         $sql = "SELECT * FROM tbl_category";
-
-                        //Execute Query
                         $res = mysqli_query($conn, $sql);
-
-                        //Count Rows
                         $count = mysqli_num_rows($res);
-
-                        //Create Serial Number Variable and assign value as 1
                         $sn=1;
 
-                        //Check whether we have data in database or not
                         if($count>0)
                         {
-                            //We have data in database
-                            //get the data and display
                             while($row=mysqli_fetch_assoc($res))
                             {
                                 $id = $row['id'];
@@ -103,10 +92,8 @@
                                         <td>
 
                                             <?php  
-                                                //Chcek whether image name is available or not
                                                 if($image_name!="")
                                                 {
-                                                    //Display the Image
                                                     ?>
                                                     
                                                     <img src="<?php echo SITEURL; ?>images/category/<?php echo $image_name; ?>" width="100px" >
@@ -115,8 +102,7 @@
                                                 }
                                                 else
                                                 {
-                                                    //DIsplay the MEssage
-                                                    echo "<div class='error'>Image not Added.</div>";
+                                                    echo "<div class='error'>Image tidak ada.</div>";
                                                 }
                                             ?>
 
@@ -125,8 +111,8 @@
                                         <td><?php echo $featured; ?></td>
                                         <td><?php echo $active; ?></td>
                                         <td>
-                                            <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id; ?>" class="btn-secondary">Update Category</a>
-                                            <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Category</a>
+                                            <a href="<?php echo SITEURL; ?>admin/update_kategori.php?id=<?php echo $id; ?>" class="btn-secondary">Update Kategori</a>
+                                            <a href="<?php echo SITEURL; ?>admin/delete_kategori.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Kategori</a>
                                         </td>
                                     </tr>
 
@@ -136,12 +122,10 @@
                         }
                         else
                         {
-                            //WE do not have data
-                            //We'll display the message inside table
                             ?>
 
                             <tr>
-                                <td colspan="6"><div class="error">No Category Added.</div></td>
+                                <td colspan="6"><div class="error">Tidak Ada Kategori.</div></td>
                             </tr>
 
                             <?php

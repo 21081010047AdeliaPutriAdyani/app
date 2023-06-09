@@ -13,7 +13,7 @@
             if($remove==false)
             {
                 $_SESSION['upload'] = "<div class='error'>Gagal Menghapus Gambar.</div>";
-                header('location:'.SITEURL.'admin/manage-food.php');
+                header('location:'.SITEURL.'admin/food.php');
                 die();
             }
 
@@ -25,19 +25,19 @@
         if($res==true)
         {
             $_SESSION['delete'] = "<div class='success'>Berhasil Menghapus Makanan.</div>";\
-            header('location:'.SITEURL.'admin/manage-food.php');
+            header('location:'.SITEURL.'admin/food.php');
         }
         else
         {
             $_SESSION['delete'] = "<div class='error'>Gagal Menghapus Makanan.</div>";\
-            header('location:'.SITEURL.'admin/manage-food.php');
+            header('location:'.SITEURL.'admin/food.php');
         }
 
     }
     else
     {
         $_SESSION['unauthorize'] = "<div class='error'>Gagal Mengganti Akses.</div>";
-        header('location:'.SITEURL.'admin/manage-food.php');
+        header('location:'.SITEURL.'admin/food.php');
     }
 
 ?>
