@@ -79,12 +79,10 @@
                 
                 if(isset($_POST['featured']))
                 {
-                    //Get the VAlue from form
                     $featured = $_POST['featured'];
                 }
                 else
                 {
-                    //SEt the Default VAlue
                     $featured = "No";
                 }
 
@@ -111,7 +109,7 @@
 
                         $ext = end(explode('.', $image_name));
 
-                        $image_name = "Food_Category_".rand(000, 999).'.'.$ext; // e.g. Food_Category_834.jpg
+                        $image_name = "Food_Category_".rand(000, 999).'.'.$ext;
                         
 
                         $source_path = $_FILES['image']['tmp_name'];
@@ -122,7 +120,7 @@
 
                        if($upload==false)
                         {
-                           $_SESSION['upload'] = "<div class='error'>Failed to Upload Image. </div>";
+                           $_SESSION['upload'] = "<div class='error'>Gagal Upload Image. </div>";
                             header('location:'.SITEURL.'admin/add-category.php');
                             die();
                         }
@@ -145,13 +143,13 @@
 
                 if($res==true)
                 {
-                    $_SESSION['add'] = "<div class='success'>Category Added Successfully.</div>";
+                    $_SESSION['add'] = "<div class='success'Berhasil Menambahkan Kategori.</div>";
                     header('location:'.SITEURL.'admin/manage-category.php');
                 }
                 else
                 {
                     $_SESSION['add'] = "<div class='error'>Failed to Add Category.</div>";
-                   header('location:'.SITEURL.'admin/add-category.php');
+                   header('location:'.SITEURL.'admin/add_kategori.php');
                 }
             }
         
