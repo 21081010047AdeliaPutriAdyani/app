@@ -1,15 +1,12 @@
 
 <?php include('partials-front/menu.php'); ?>
 
-
-
     <!-- CAtegories Section Starts Here -->
     <section class="categories">
         <div class="container">
-            <h2 class="text-center">Explore Foods</h2>
+            <h2 class="text-center">Jelajahi Menu</h2>
 
             <?php 
-
                 //Display all the cateories that are active
                 //Sql Query
                 $sql = "SELECT * FROM tbl_category WHERE active='Yes'";

@@ -6,7 +6,7 @@
         <div class="container">
             
             <form action="food-search.php" method="POST">
-                <input type="search" name="search" placeholder="Search for Food.." required>
+                <input type="search" name="search" placeholder="Cari Makanan.." required>
                 <input type="submit" name="submit" value="Search" class="btn btn-primary">
             </form>
 
@@ -19,7 +19,7 @@
     <!-- fOOD MEnu Section Starts Here -->
     <section class="food-menu">
         <div class="container">
-            <h2 class="text-center">Food Menu</h2>
+            <h2 class="text-center">Menu Makanan</h2>
 
             <?php 
                 //Display Foods that are Active
@@ -73,7 +73,7 @@
                                 </p>
                                 <br>
 
-                                <a href="order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Order Now</a>
+                                <a href="order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Pesan Sekarang</a>
                             </div>
                         </div>
 

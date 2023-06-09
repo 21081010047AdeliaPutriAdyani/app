@@ -43,11 +43,11 @@
     <section class="food-search">
         <div class="container">
             
-            <h2 class="text-center text-white">Fill this form to confirm your order.</h2>
+            <h2 class="text-center text-white">Isi Detail Pesanan Anda.</h2>
 
             <form action="" method="POST" class="order">
                 <fieldset>
-                    <legend>Selected Food</legend>
+                    <legend>Menu Terpilih</legend>
 
                     <div class="food-menu-img">
                         <?php 
@@ -74,10 +74,10 @@
                         <h3><?php echo $title; ?></h3>
                         <input type="hidden" name="food" value="<?php echo $title; ?>">
 
-                        <p class="food-price">$<?php echo $price; ?></p>
+                        <p class="food-price">Rp<?php echo $price; ?></p>
                         <input type="hidden" name="price" value="<?php echo $price; ?>">
 
-                        <div class="order-label">Quantity</div>
+                        <div class="order-label">Banyak Menu</div>
                         <input type="number" name="qty" class="input-responsive" value="1" required>
                         
                     </div>
@@ -86,19 +86,19 @@
                 
                 <fieldset>
                     <legend>Delivery Details</legend>
-                    <div class="order-label">Full Name</div>
-                    <input type="text" name="full-name" placeholder="E.g. Vijay Thapa" class="input-responsive" required>
+                    <div class="order-label">Nama Lengkap</div>
+                    <input type="text" name="full-name" placeholder="Cth. Adelia Putri" class="input-responsive" required>
 
-                    <div class="order-label">Phone Number</div>
-                    <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
+                    <div class="order-label">Nomor Telepon</div>
+                    <input type="tel" name="contact" placeholder="Cth. 081xxxxxx" class="input-responsive" required>
 
                     <div class="order-label">Email</div>
-                    <input type="email" name="email" placeholder="E.g. hi@vijaythapa.com" class="input-responsive" required>
+                    <input type="email" name="email" placeholder="Cth. hi@gmail.com" class="input-responsive" required>
 
-                    <div class="order-label">Address</div>
-                    <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+                    <div class="order-label">Alamat</div>
+                    <textarea name="address" rows="10" placeholder="Cth. Jalan Gula" class="input-responsive" required></textarea>
 
-                    <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
+                    <input type="submit" name="submit" value="Konfirmasi Pesanan" class="btn btn-primary">
                 </fieldset>
 
             </form>

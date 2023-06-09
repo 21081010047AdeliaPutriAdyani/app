@@ -13,7 +13,7 @@
             ?>
 
 
-            <h2>Foods on Your Search <a href="#" class="text-white">"<?php echo $search; ?>"</a></h2>
+            <h2>Makanan yang Anda Cari <a href="#" class="text-white">"<?php echo $search; ?>"</a></h2>
 
         </div>
     </section>
@@ -24,7 +24,7 @@
     <!-- fOOD MEnu Section Starts Here -->
     <section class="food-menu">
         <div class="container">
-            <h2 class="text-center">Food Menu</h2>
+            <h2 class="text-center">Menu Makanan</h2>
 
             <?php 
 
@@ -82,7 +82,7 @@
                                 </p>
                                 <br>
 
-                                <a href="#" class="btn btn-primary">Order Now</a>
+                                <a href="#" class="btn btn-primary">Pesan Sekarang</a>
                             </div>
                         </div>
 
@@ -92,7 +92,7 @@
                 else
                 {
                     //Food Not Available
-                    echo "<div class='error'>Food not found.</div>";
+                    echo "<div class='error'>Makanan Tidak Tersedia.</div>";
                 }
             
             ?>

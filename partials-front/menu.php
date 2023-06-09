@@ -1,4 +1,4 @@
-<?php include('config/constants.php'); ?>
+<?php include('koneksi/koneksi.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <!-- Important to make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Website</title>
+    <title>Wow Food</title>
 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
@@ -28,13 +28,13 @@
                         <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="categories.php">Categories</a>
+                        <a href="categories.php">Kategori</a>
                     </li>
                     <li>
-                        <a href="foods.php">Foods</a>
+                        <a href="foods.php">Makanan</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">Tentang</a>
                     </li>
                 </ul>
             </div>
