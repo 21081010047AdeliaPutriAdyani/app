@@ -1,16 +1,13 @@
 <?php include('partials/menu.php'); ?>
 
 <div class="main-content">
-    <div class="wrapper">
-        <h1>Add Admin</h1>
-
-        <br><br>
-
+    <div class="container">
+        <h1>Add Data Admin</h1>
         <?php 
-            if(isset($_SESSION['add'])) //Checking whether the SEssion is Set of Not
+            if(isset($_SESSION['add'])) 
             {
-                echo $_SESSION['add']; //Display the SEssion Message if SEt
-                unset($_SESSION['add']); //Remove Session Message
+                echo $_SESSION['add'];
+                unset($_SESSION['add']);
             }
         ?>
 
@@ -18,29 +15,29 @@
 
             <table class="tbl-30">
                 <tr>
-                    <td>Full Name: </td>
+                    <td>Full Name : </td>
                     <td>
-                        <input type="text" name="full_name" placeholder="Enter Your Name">
+                        <input type="text" name="full_name" placeholder="Masukkan Nama Lengkap Anda">
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Username: </td>
+                    <td>Username : </td>
                     <td>
-                        <input type="text" name="username" placeholder="Your Username">
+                        <input type="text" name="username" placeholder="Masukkan Username">
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Password: </td>
+                    <td>Password : </td>
                     <td>
-                        <input type="password" name="password" placeholder="Your Password">
+                        <input type="password" name="password" placeholder="Masukkan Password">
                     </td>
                 </tr>
 
                 <tr>
                     <td colspan="2">
-                        <input type="submit" name="submit" value="Add Admin" class="btn-secondary">
+                        <input type="submit" name="submit" value="Add Data Admin" class="btn-secondary">
                     </td>
                 </tr>
 
