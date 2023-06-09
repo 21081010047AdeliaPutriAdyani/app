@@ -35,7 +35,7 @@
                 <tr>
                     <td>Price: </td>
                     <td>
-                        <input type="number" name="Harga">
+                        <input type="number" name="price">
                     </td>
                 </tr>
 
@@ -49,7 +49,7 @@
                 <tr>
                     <td>Category: </td>
                     <td>
-                        <select name="Kategori">
+                        <select name="category">
 
                             <?php 
                                 $sql = "SELECT * FROM tbl_category WHERE active='Yes'";
@@ -171,7 +171,7 @@
 
                 $res2 = mysqli_query($conn, $sql2);
 
-                if($res2 == true)
+                if($res2)
                 {
                     $_SESSION['add'] = "<div class='success'>Food Added Successfully.</div>";
                     header('location:'.SITEURL.'admin/food.php');
