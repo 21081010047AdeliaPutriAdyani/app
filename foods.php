@@ -7,7 +7,7 @@
             
             <form action="food-search.php" method="POST">
                 <input type="search" name="search" placeholder="Cari Makanan.." required>
-                <input type="submit" name="submit" value="Search" class="btn btn-primary">
+                <input type="submit" name="submit" value="Cari" class="btn btn-primary">
             </form>
 
         </div>
@@ -67,7 +67,7 @@
 
                             <div class="food-menu-desc">
                                 <h4><?php echo $title; ?></h4>
-                                <p class="food-price">$<?php echo $price; ?></p>
+                                <p class="food-price">Rp <?php echo $price; ?></p>
                                 <p class="food-detail">
                                     <?php echo $description; ?>
                                 </p>
