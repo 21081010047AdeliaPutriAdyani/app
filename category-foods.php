@@ -31,7 +31,7 @@
     <section class="food-search text-center">
         <div class="container">
             
-            <h2>Foods on <a href="#" class="text-white">"<?php echo $category_title; ?>"</a></h2>
+            <h2>Makanan untuk <a href="#" class="text-white">"<?php echo $category_title; ?>"</a></h2>
 
         </div>
     </section>
@@ -42,7 +42,7 @@
     <!-- fOOD MEnu Section Starts Here -->
     <section class="food-menu">
         <div class="container">
-            <h2 class="text-center">Food Menu</h2>
+            <h2 class="text-center">Menu Makanan</h2>
 
             <?php 
             
@@ -95,7 +95,7 @@
                                 </p>
                                 <br>
 
-                                <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Order Now</a>
+                                <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Pesan Sekarang</a>
                             </div>
                         </div>
 
