@@ -10,7 +10,7 @@
             $path = "../images/category/".$image_name;
             $remove = unlink($path);
 
-            /if($remove==false)
+            if($remove==false)
             {
                  $_SESSION['remove'] = "<div class='error'>Gagal Menghapus Gambar.</div>";
                 header('location:'.SITEURL.'admin/kategori.php');
