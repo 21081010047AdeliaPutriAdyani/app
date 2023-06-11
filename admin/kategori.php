@@ -58,12 +58,12 @@
 
                 <table class="tbl-full">
                     <tr>
-                        <th>S.N.</th>
-                        <th>Title</th>
-                        <th>Image</th>
-                        <th>Featured</th>
-                        <th>Active</th>
-                        <th>Actions</th>
+                        <th>ID</th>
+                        <th>Nama</th>
+                        <th>Foto</th>
+                        <th>Rekomendasi</th>
+                        <th>Stok Aktif</th>
+                        <th>Action</th>
                     </tr>
 
                     <?php 

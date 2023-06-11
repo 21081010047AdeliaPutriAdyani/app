@@ -53,10 +53,10 @@
 
                 <table class="tbl-full">
                     <tr>
-                        <th>S.N.</th>
-                        <th>Full Name</th>
+                        <th>ID</th>
+                        <th>Nama</th>
                         <th>Username</th>
-                        <th>Actions</th>
+                        <th>Action</th>
                     </tr>
 
                     

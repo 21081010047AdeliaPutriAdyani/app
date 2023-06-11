@@ -33,7 +33,7 @@
 
             <table class="tbl-30">
                 <tr>
-                    <td>Full Name: </td>
+                    <td>Nama: </td>
                     <td>
                         <input type="text" name="full_name" value="<?php echo $full_name; ?>">
                     </td>

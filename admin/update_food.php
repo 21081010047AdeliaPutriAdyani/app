@@ -36,28 +36,28 @@
         <table class="tbl-30">
 
             <tr>
-                <td>Title: </td>
+                <td>Nama: </td>
                 <td>
                     <input type="text" name="title" value="<?php echo $title; ?>">
                 </td>
             </tr>
 
             <tr>
-                <td>Description: </td>
+                <td>Deskripsi: </td>
                 <td>
                     <textarea name="description" cols="30" rows="5"><?php echo $description; ?></textarea>
                 </td>
             </tr>
 
             <tr>
-                <td>Price: </td>
+                <td>Harga: </td>
                 <td>
                     <input type="number" name="price" value="<?php echo $price; ?>">
                 </td>
             </tr>
 
             <tr>
-                <td>Current Image: </td>
+                <td>Foto Lama: </td>
                 <td>
                     <?php 
                         if($current_image == "")
@@ -75,14 +75,14 @@
             </tr>
 
             <tr>
-                <td>Select New Image: </td>
+                <td>Foto Baru: </td>
                 <td>
                     <input type="file" name="image">
                 </td>
             </tr>
 
             <tr>
-                <td>Category: </td>
+                <td>Kategori: </td>
                 <td>
                     <select name="category">
 
@@ -115,7 +115,7 @@
             </tr>
 
             <tr>
-                <td>Featured: </td>
+                <td>Rekomendasi: </td>
                 <td>
                     <input <?php if($featured=="Yes") {echo "checked";} ?> type="radio" name="featured" value="Yes"> Yes 
                     <input <?php if($featured=="No") {echo "checked";} ?> type="radio" name="featured" value="No"> No 
@@ -123,7 +123,7 @@
             </tr>
 
             <tr>
-                <td>Active: </td>
+                <td>Stok Aktif: </td>
                 <td>
                     <input <?php if($active=="Yes") {echo "checked";} ?> type="radio" name="active" value="Yes"> Yes 
                     <input <?php if($active=="No") {echo "checked";} ?> type="radio" name="active" value="No"> No 

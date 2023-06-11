@@ -43,14 +43,14 @@
 
             <table class="tbl-30">
                 <tr>
-                    <td>Title: </td>
+                    <td>Nama : </td>
                     <td>
                         <input type="text" name="title" value="<?php echo $title; ?>">
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Current Image: </td>
+                    <td>Foto Lama: </td>
                     <td>
                         <?php 
                             if($current_image != "")
@@ -68,14 +68,14 @@
                 </tr>
 
                 <tr>
-                    <td>New Image: </td>
+                    <td>Foto Baru: </td>
                     <td>
                         <input type="file" name="image">
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Featured: </td>
+                    <td>Rekomendasi: </td>
                     <td>
                         <input <?php if($featured=="Yes"){echo "checked";} ?> type="radio" name="featured" value="Yes"> Yes 
 
@@ -84,7 +84,7 @@
                 </tr>
 
                 <tr>
-                    <td>Active: </td>
+                    <td>Stok Aktif: </td>
                     <td>
                         <input <?php if($active=="Yes"){echo "checked";} ?> type="radio" name="active" value="Yes"> Yes 
 

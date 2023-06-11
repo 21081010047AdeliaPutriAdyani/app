@@ -26,21 +26,21 @@
 
             <table class="tbl-30">
                 <tr>
-                    <td>Title: </td>
+                    <td>Nama: </td>
                     <td>
                         <input type="text" name="title" placeholder="Katagori">
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Select Image: </td>
+                    <td>Foto: </td>
                     <td>
                         <input type="file" name="image">
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Featured: </td>
+                    <td>Rekomendasi: </td>
                     <td>
                         <input type="radio" name="featured" value="Yes"> Yes 
                         <input type="radio" name="featured" value="No"> No 
@@ -48,7 +48,7 @@
                 </tr>
 
                 <tr>
-                    <td>Active: </td>
+                    <td>Stok Aktif: </td>
                     <td>
                         <input type="radio" name="active" value="Yes"> Yes 
                         <input type="radio" name="active" value="No"> No 

@@ -15,7 +15,7 @@
 
             <table class="tbl-30">
                 <tr>
-                    <td>Full Name : </td>
+                    <td>Nama : </td>
                     <td>
                         <input type="text" name="full_name" placeholder="Masukkan Nama Lengkap Anda">
                     </td>

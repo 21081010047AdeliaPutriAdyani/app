@@ -2,7 +2,7 @@
 
 <div class="main-content">
     <div class="container">
-        <h1>Manage Food</h1>
+        <h1>Food</h1>
 
         <br /><br />
 
@@ -45,13 +45,13 @@
 
                 <table class="tbl-full">
                     <tr>
-                        <th>S.N.</th>
-                        <th>Title</th>
-                        <th>Price</th>
-                        <th>Image</th>
-                        <th>Featured</th>
-                        <th>Active</th>
-                        <th>Actions</th>
+                        <th>ID</th>
+                        <th>Nama</th>
+                        <th>Harga</th>
+                        <th>Foto</th>
+                        <th>Rekomendasi</th>
+                        <th>Stok Aktif</th>
+                        <th>Action</th>
                     </tr>
 
                     <?php 
