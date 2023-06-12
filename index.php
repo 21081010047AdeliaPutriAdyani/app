@@ -11,7 +11,7 @@
 
         </div>
     </section>
-    <!-- fOOD sEARCH Section Ends Here -->
+    <!-- food search -->
 
     <?php 
         if(isset($_SESSION['order']))
@@ -21,25 +21,23 @@
         }
     ?>
 
-    <!-- CAtegories Section Starts Here -->
+    <!-- catagori -->
     <section class="categories">
         <div class="container">
             <h2 class="text-center">Jelajahi Makanan</h2>
 
             <?php 
-                //Create SQL Query to Display CAtegories from Database
+                //sql catagori 
                 $sql = "SELECT * FROM tbl_category WHERE active='Yes' AND featured='Yes' LIMIT 3";
-                //Execute the Query
+                
                 $res = mysqli_query($conn, $sql);
-                //Count rows to check whether the category is available or not
                 $count = mysqli_num_rows($res);
 
                 if($count>0)
                 {
-                    //CAtegories Available
+                    //CAtegories tersedia
                     while($row=mysqli_fetch_assoc($res))
                     {
-                        //Get the Values like id, title, image_name
                         $id = $row['id'];
                         $title = $row['title'];
                         $image_name = $row['image_name'];
@@ -73,7 +71,7 @@
                 }
                 else
                 {
-                    //Categories not Available
+                    //Categories tidak tersedia
                     echo "<div class='error'>Category not Added.</div>";
                 }
             ?>
@@ -82,34 +80,28 @@
             <div class="clearfix"></div>
         </div>
     </section>
-    <!-- Categories Section Ends Here -->
 
 
 
-    <!-- fOOD MEnu Section Starts Here -->
+    <!-- fOOD MEnu -->
     <section class="food-menu">
         <div class="container">
             <h2 class="text-center">Menu Makanan</h2>
 
             <?php 
             
-            //Getting Foods from Database that are active and featured
             //SQL Query
             $sql2 = "SELECT * FROM tbl_food WHERE active='Yes' AND featured='Yes' LIMIT 6";
 
-            //Execute the Query
             $res2 = mysqli_query($conn, $sql2);
 
-            //Count Rows
             $count2 = mysqli_num_rows($res2);
 
-            //CHeck whether food available or not
             if($count2>0)
             {
-                //Food Available
+                //Food tersedia
                 while($row=mysqli_fetch_assoc($res2))
                 {
-                    //Get all the values
                     $id = $row['id'];
                     $title = $row['title'];
                     $price = $row['price'];
@@ -120,15 +112,12 @@
                     <div class="food-menu-box">
                         <div class="food-menu-img">
                             <?php 
-                                //Check whether image available or not
                                 if($image_name=="")
                                 {
-                                    //Image not Available
                                     echo "<div class='error'>Image not available.</div>";
                                 }
                                 else
                                 {
-                                    //Image Available
                                     ?>
                                     <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
                                     <?php
@@ -154,7 +143,7 @@
             }
             else
             {
-                //Food Not Available 
+                //Food tidak tersedua
                 echo "<div class='error'>Food not available.</div>";
             }
             
@@ -174,7 +163,3 @@
             <a href="#">Lihat Menu Lainnya</a>
         </p>
     </section>
-    <!-- fOOD Menu Section Ends Here -->
-
-    
-    <!--?php include('partials-front/footer.php'); ?>

@@ -166,6 +166,3 @@
 
         </div>
     </section>
-    <!-- fOOD sEARCH Section Ends Here -->
-
-    <!--?php include('partials-front/footer.php'); ?>
